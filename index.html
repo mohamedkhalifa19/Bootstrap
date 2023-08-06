@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap5 Crash Course</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="bg-dark text-white navbar px-2 mb-2">
+      <div class="left d-flex">
+        <a href="" class="logo navbar-brand">
+          <i class="fa-solid fa-house"></i>
+          <span>Logo</span>
+        </a>
+        <div class="links d-md-block d-none">
+          <a href="">
+            <i class="fa-solid fa-earth-americas"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+        </div>
+      </div>
+      <div class="right d-none d-md-block">
+        <a
+          href="
+        "
+        >
+          <img src="user.jpeg" width="40" class="rounded-circle" alt="" />
+        </a>
+      </div>
+
+      <button
+        class="navbar-toggler d-block d-md-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars text-white" style="font-size: 28px"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse px-3 bg-dark text-white"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav me-auto my-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid bg-primary text-white">
+      <div class="row gy-2">
+        <div class="col-md-3 col-12 left">
+          <div class="card" style="height: 300px">
+            <img
+              src="user.jpeg"
+              alt=""
+              class="card-img-top rounded-circle mx-auto"
+              style="width: 120px"
+            />
+            <div class="card-body">
+              <div class="card-title text-dark text-center">My Profile</div>
+              <div class="card-text text-dark p-2">
+                <p class="text-secondary">
+                  <i class="fa-solid fa-pen"></i>
+                  <span class="mx-2">Designer, UI</span>
+                </p>
+                <p class="text-secondary">
+                  <i class="fa-solid fa-pen"></i>
+                  <span class="mx-2">Designer, UI</span>
+                </p>
+                <p class="text-secondary">
+                  <i class="fa-solid fa-pen"></i>
+                  <span class="mx-2">Designer, UI</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-1 text-dark">
+            <div class="card-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <i class="fa-solid fa-power-off"></i>
+                    <span class="mx-3">My Groups</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Some Text.....</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="mx-3">My Events</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Some other Text...</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <i class="fa-solid fa-users"></i>
+                    <span class="mx-3">My Photos</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body mx-auto">
+                    <img src="user.jpeg" alt="" width="25%" class="m-3" />
+                    <img src="user.jpeg" alt="" width="25%" class="m-3" />
+                    <img src="user.jpeg" alt="" width="25%" class="m-3" />
+                    <img src="user.jpeg" alt="" width="25%" class="m-3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title text-dark">Interests</div>
+              <div class="card-text text-dark">
+                <div>
+                  <span class="bg-dark text-white px-2">News</span>
+                  <span class="bg-dark text-white px-2">News</span>
+                  <span class="bg-dark text-white px-2">News</span>
+                  <span class="bg-dark text-white px-2">News</span>
+                </div>
+                <div class="mt-1">
+                  <span class="bg-secondary text-white px-2">News</span>
+                  <span class="bg-secondary text-white px-2">News</span>
+                  <span class="bg-secondary text-white px-2">News</span>
+                  <span class="bg-secondary text-white px-2">News</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 gap-2 middle">
+          <form action="" class="bg-white rounded" style="height: 150px">
+            <p class="text-secondary p-2">Social Media template by w3.css</p>
+            <input type="text" class="form-control mx-auto w-75 my-1" />
+            <a href="" type="button" class="btn btn-secondary m-2 px-4">
+              <i class="fa-solid fa-pen"></i> Post
+            </a>
+          </form>
+          <div class="post my-3 bg-white rounded">
+            <div
+              class="post-top p-2 text-dark d-flex align-items-center justify-content-between"
+            >
+              <div class="left">
+                <img src="user.jpeg" alt="" class="rounded-circle" width="50" />
+                <span style="font-weight: 500">Mohamed Khalifa</span>
+              </div>
+              <div class="right">
+                <p>1 Min</p>
+              </div>
+            </div>
+            <div class="post-body px-2">
+              <p class="text-dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequuntur ipsam libero magni ad recusandae quibusdam dolores
+                itaque et impedit? Omnis illum aut numquam vel nihil commodi
+                deleniti dolor, impedit quod?
+              </p>
+              <div class="images d-flex justify-content-center">
+                <img src="lights.jpg" width="35%" alt="" class="m-2" />
+                <img src="lights.jpg" width="35%" alt="" class="m-2" />
+              </div>
+            </div>
+            <div class="buttons p-2">
+              <a href="" class="btn btn-secondary w-20 py-2 d-inline-block "
+                ><i class="fa-solid fa-thumbs-up mx-2 fs-5"></i>Like</a
+                >Like</a
+              >
+              <a href="" class="btn btn-secondary w-20 py-2 d-inline-block"
+                >
+                <i class="fa-solid fa-comment mx-2 fs-5"></i> Comment
+               </a
+              >
+            </div>
+          </div>
+          <div class="post my-3 bg-white rounded">
+            <div
+              class="post-top p-2 text-dark d-flex align-items-center justify-content-between"
+            >
+              <div class="left">
+                <img src="user.jpeg" alt="" class="rounded-circle" width="50" />
+                <span style="font-weight: 500">Mohamed Khalifa</span>
+              </div>
+              <div class="right">
+                <p>1 Min</p>
+              </div>
+            </div>
+            <div class="post-body px-2">
+              <p class="text-dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequuntur ipsam libero magni ad recusandae quibusdam dolores
+                itaque et impedit? Omnis illum aut numquam vel nihil commodi
+                deleniti dolor, impedit quod?
+              </p>
+              <div class="images d-flex justify-content-center">
+                <img src="lights.jpg" width="35%" alt="" class="m-2" />
+                <img src="lights.jpg" width="35%" alt="" class="m-2" />
+              </div>
+            </div>
+            <div class="buttons p-2">
+              <a href="" class="btn btn-secondary w-20 py-2 d-inline-block "
+                ><i class="fa-solid fa-thumbs-up mx-2 fs-5"></i>Like</a
+                >Like</a
+              >
+              <a href="" class="btn btn-secondary w-20 py-2 d-inline-block"
+                >
+                <i class="fa-solid fa-comment mx-2 fs-5"></i> Comment
+               </a
+              >
+            </div>
+          </div>
+          <div class="post my-3 bg-white rounded">
+            <div
+              class="post-top p-2 text-dark d-flex align-items-center justify-content-between"
+            >
+              <div class="left">
+                <img src="user.jpeg" alt="" class="rounded-circle" width="50" />
+                <span style="font-weight: 500">Mohamed Khalifa</span>
+              </div>
+              <div class="right">
+                <p>1 Min</p>
+              </div>
+            </div>
+            <div class="post-body px-2">
+              <p class="text-dark">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequuntur ipsam libero magni ad recusandae quibusdam dolores
+                itaque et impedit? Omnis illum aut numquam vel nihil commodi
+                deleniti dolor, impedit quod?
+              </p>
+              <div class="images d-flex justify-content-center">
+                <img src="lights.jpg" width="35%" alt="" class="m-2" />
+                <img src="lights.jpg" width="35%" alt="" class="m-2" />
+              </div>
+            </div>
+            <div class="buttons p-2">
+              <a href="" class="btn btn-secondary w-20 py-2 d-inline-block "
+                ><i class="fa-solid fa-thumbs-up mx-2 fs-5"></i>Like</a
+                >Like</a
+              >
+              <a href="" class="btn btn-secondary w-20 py-2 d-inline-block"
+                >
+                <i class="fa-solid fa-comment mx-2 fs-5"></i> Comment
+               </a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-12  right">
+         <div class="box bg-white m-2 p-3 rounded">
+          <p class="text-dark text-center">Upcoming Events:</p>
+          <img src="lights.jpg" class="mx-auto d-block" width="90%" alt="">
+          <p class="text-dark text-center my-2" style="font-weight: bold;">Holiday</p>
+          <p class="text-dark text-center my-2">Friday 15:00</p>
+          <a href="" class="btn btn-secondary d-block w-75 mx-auto">Info</a>
+
+         </div>
+         <div class="box bg-white m-2 p-3 rounded">
+          <p class="text-dark text-center">Friend Request</p>
+          <img src="user.jpeg" class="mx-auto d-block" width="70%" alt="">
+          <p class="text-dark text-center my-2" style="font-weight: bold;">Jane Doe</p>
+          <p class="text-dark text-center my-2">Friday 15:00</p>
+          <div class="buttons d-flex">
+            <a href="" class="btn btn-success d-block w-50 mx-2">
+              <i class="fa-solid fa-check"></i>
+            </a>
+            <a href="" class="btn btn-danger d-block w-50">
+              <i class="fa-solid fa-close"></i>
+            </a>
+          </div>
+
+         </div>
+         <div class="box bg-white m-2 p-3 rounded">
+          <p class="text-dark text-center">Friend Request</p>
+          <img src="user.jpeg" class="mx-auto d-block" width="70%" alt="">
+          <p class="text-dark text-center my-2" style="font-weight: bold;">Jane Doe</p>
+          <p class="text-dark text-center my-2">Friday 15:00</p>
+          <div class="buttons d-flex">
+            <a href="" class="btn btn-success d-block w-50 mx-2">
+              <i class="fa-solid fa-check"></i>
+            </a>
+            <a href="" class="btn btn-danger d-block w-50">
+              <i class="fa-solid fa-close"></i>
+            </a>
+          </div>
+
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center text-white bg-dark py-4 fs-1">Footer</div>
+  </body>
+</html>

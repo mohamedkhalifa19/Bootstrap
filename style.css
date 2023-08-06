@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left a {
+  color: #fff;
+  margin-right: 12px;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+.logo {
+  background: grey;
+}
+.logo span {
+  margin-left: 5px;
+}
+
+.left a:hover {
+  background: grey;
+}
+.card {
+  border: 1px solid red;
+  height: auto;
+}
